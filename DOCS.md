@@ -8,6 +8,13 @@
 	- [Authenticate with Github](#authenticate-with-github)
 	- [Authenticate with Google](#authenticate-with-google)
 	
+- [BookHire](#bookhire)
+	- [Create book hire](#create-book-hire)
+	- [Delete book hire](#delete-book-hire)
+	- [Retrieve book hire](#retrieve-book-hire)
+	- [Retrieve book hires](#retrieve-book-hires)
+	- [Update book hire](#update-book-hire)
+	
 - [Books](#books)
 	- [Create books](#create-books)
 	- [Delete books](#delete-books)
@@ -83,6 +90,80 @@
 | Name    | Type      | Description                          |
 |---------|-----------|--------------------------------------|
 | access_token			| String			|  <p>Google user accessToken.</p>							|
+
+# BookHire
+
+## Create book hire
+
+
+
+	POST /book-hires
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| user_email			| 			|  <p>Book hire's user_email.</p>							|
+| book_title			| 			|  <p>Book hire's book_title.</p>							|
+| start_date			| 			|  <p>Book hire's start_date.</p>							|
+| end_date			| 			|  <p>Book hire's end_date.</p>							|
+
+## Delete book hire
+
+
+
+	DELETE /book_hires/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>user access token.</p>							|
+
+## Retrieve book hire
+
+
+
+	GET /book_hires/:id
+
+
+## Retrieve book hires
+
+
+
+	GET /book-hires
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| q			| String			| **optional** <p>Query to search.</p>							|
+| page			| Number			| **optional** <p>Page number.</p>							|
+| limit			| Number			| **optional** <p>Amount of returned items.</p>							|
+| sort			| String[]			| **optional** <p>Order of returned items.</p>							|
+| fields			| String[]			| **optional** <p>Fields to be returned.</p>							|
+
+## Update book hire
+
+
+
+	PUT /book-hires/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| user_email			| 			|  <p>Book hire's user_email.</p>							|
+| book_title			| 			|  <p>Book hire's book_title.</p>							|
+| start_date			| 			|  <p>Book hire's start_date.</p>							|
+| end_date			| 			|  <p>Book hire's end_date.</p>							|
 
 # Books
 

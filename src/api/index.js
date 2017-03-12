@@ -3,6 +3,7 @@ import user from './user'
 import auth from './auth'
 import books from './books'
 import bookHire from './book-hire'
+import bookHire from './book_hire'
 
 const router = new Router()
 
@@ -33,5 +34,6 @@ router.use('/users', user)
 router.use('/auth', auth)
 router.use('/books', books)
 router.use('/book-hires', bookHire)
+router.use('/book_hires', bookHire)
 
 export default router
